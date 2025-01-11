@@ -8,6 +8,7 @@ import (
 	_ "modernc.org/sqlite"
 )
 
+// коммент
 const (
 	ParcelStatusRegistered = "registered"
 	ParcelStatusSent       = "sent"
@@ -167,7 +168,7 @@ func main() {
 		return
 	}
 
-	// вывод посылок клиента
+	// вывод клиента посылок
 	// здесь не должно быть последней посылки, т.к. она должна была успешно удалиться
 	err = service.PrintClientParcels(client)
 	if err != nil {
